@@ -1,5 +1,7 @@
 package ma.tinyurl.core;
 
+import ma.tinyurl.exceptions.UrlNotFoundException;
+
 import java.util.HashMap;
 
 public class TinyUrl {
@@ -14,11 +16,10 @@ public class TinyUrl {
         return  tinyUrl;
     }
 
-    public  String decode(String tinyurl){
-        String notFound = "Your tiny url is not found";
+    public  String decode(String tinyurl) throws UrlNotFoundException {
         String url = urls.get(tinyurl);
         if (url == null){
-            return  notFound;
+            throw new UrlNotFoundException("Your tiny url is not found");
         }
         else
             return url;
