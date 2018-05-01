@@ -1,5 +1,6 @@
-package com.mydomain.organized;
+package test.com.mydomain.organized;
 
+import com.mydomain.organized.TinyUrl;
 import junit.framework.TestCase;
 
 public class TinyUrlTest extends TestCase {
