@@ -1,4 +1,4 @@
-package com.mydomain.organized;
+package ma.tinyurl.core;
 
 import java.util.HashMap;
 
